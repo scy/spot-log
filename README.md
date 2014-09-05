@@ -4,7 +4,8 @@ Poll the SPOT Satellite Tracking System API in regular intervals for the positio
 
 This is pretty much alpha. Call it with a “shared feed ID” as its first (and only) command-line parameter:
 
-	./spot-log 8dJKed8Sjlkfdj89jsDH89EHDl
+	go get github.com/scy/spot-log
+	spot-log 8dJKed8Sjlkfdj89jsDH89EHDl
 
 It will start reading the feed backwards until all previous values have been retrieved. Then, it will poll the API for new values.
 
